@@ -511,6 +511,13 @@ span {
   bottom:25%;
 }
 
+#birds{
+  max-width: 15vw;
+  position: absolute;
+  z-index: 9;
+  right:10%;
+  top:5%;
+}
 
 
 /* 
