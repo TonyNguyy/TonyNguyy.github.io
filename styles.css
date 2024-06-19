@@ -474,12 +474,46 @@ span {
 }
 
 #lotus-flower{
-  max-width: 10vw;
+  max-width: 9vw;
   position: absolute;
   z-index: 10;
   right:40%;
   bottom:40%;
+  animation: gelatine 0.5s infinite;
 }
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+#lotus-flower-2{
+  max-width: 5vw;
+  position: absolute;
+  z-index: 10;
+  left:25%;
+  bottom:40%;
+}
+
+
+#lotus-flower-3{
+  max-width: 8vw;
+  position: absolute;
+  z-index: 10;
+  right:30%;
+  bottom:35%;
+}
+
+#lotus-flower-4{
+  max-width: 11vw;
+  position: absolute;
+  z-index: 10;
+  left:35%;
+  bottom:30%;
+}
+
+
 #blood{
   max-width: 7vw;
   position: absolute;
