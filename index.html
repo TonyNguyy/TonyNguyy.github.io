@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" href="../Final//public/css/styles.css" rel="stylesheet">
+    <link rel="icon" href="./images/lotus.png">
+    <title>HereAfter</title>
+</head>
+<body>
+
+    <div class="wrapper"> 
+         <!--Header-->
+   <header class="header">
+    <!-- <div class="navbar">
+       
+        <img src="../LotusMind/public/images/lotus.png" alt="lotus" id="logo-lotus">
+        <div class="logo">
+             <a href="#" id="lotus-mind">Lotus Mind</a>
+            </div>
+        <ul class="links">
+            <li><a href="/">Home</a></li>
+           <li><a href="#">About Us</a></li>
+          <li><a href="/meditationcenter">Meditation Center </a></li>
+           <li><a href="/meditationroom">Contact Us</a></li>
+            </ul>
+
+        <a href="/meditationroom" class="action_btn">Start</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+        <div class="dropdown_menu">
+        <a href="#" class="action_btn">Start</a>
+        <l><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('meditate') }}">Meditation Center</a></li>
+            <li><a href="{{ url_for('share') }}">Contact Us</a></li>
+            <li><a href="{{ url_for('meditate') }}" class="action_btn">Start</a></li>
+        </div> -->
+    </header>
+  
+
+        <div class="layers">
+            <main class="text-container" id="hero"> 
+            
+               <h3> <span>Welcome To The</span></h3 ></span>
+                <h1><span>Great Beyond</span></h1>
+                <p><span>Created by Tony Nguyen</span></p>
+            </main>
+            <img src="../Final/public/images/hill 1.png" alt="hill-1" id="hill-one">
+            <img src="../Final/public/images/hill 2.png" alt="hill-2" id="hill-two">
+            <img src="../Final/public/images/hill 3.png" alt="hill-3" id='hill-three'>
+            <img src="../Final/public/images/sun.png" alt="sun" id="sun" class="fade-in-down" class="shake"> 
+            <img src="../Final/public/images/mountain.png" alt="mountain" id="mountain">
+            <!-- <img src="../LotusMind/public/images/dark-mascot.png" alt="lotus" id="meditation-mascot" class="float">   -->
+            <img src="../Final/public/images/fireflies.gif" alt="Fireflies" id="fireflies">
+            <img src="../Final/public/images/indigenous.png" alt="Tribes" id="tribes">
+            <img src="../Final/public/images/teensprotesting.png" alt="Teen protesting" id="teens">
+            <img src="../Final/public/images/indigenous.png" alt="Tribes" id="tribes">
+            <img src="../Final/public/images/fireplace.gif" alt="Fireplace" id="fireplace">
+            <img src="../Final/public/images/rock.png" alt="rock" id="rock">
+            <img src="../Final/public/images/tombstone.gif" alt="tombstone" id="tombstone">
+            <img src="../Final/public/images/lotus.png" alt="lotus" id="lotus-flower">
+        </div>
+
+        
+    </div> 
+   
+      
+
+
+
+    <script src ='script.js'></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick= function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+     </script>
+    
+</body>
+</html>
