@@ -420,13 +420,20 @@ span {
     filter: drop-shadow(0 -5rem 13rem rgb(249, 237, 173));
 }
 
+
 #teens{
-  max-width: 15vw;
+  max-width: 20vw;
   position: absolute;
   z-index: 10;
   right:10%;
-  bottom:20%
+  bottom:20%;
+  animation: pulse 2.5s infinite ease-in-out alternate;
 }
+@keyframes pulse {
+  from { transform: scale(0.95); }
+  to { transform: scale(1); }
+}
+
 #tribes{
   max-width: 10vw;
   position: absolute;
@@ -458,14 +465,52 @@ span {
   right:10%;
   bottom:60%;
 }
+#funeral{
+  max-width: 6vw;
+  position: absolute;
+  z-index: 10;
+  right:13%;
+  bottom:59%;
+}
 
 #lotus-flower{
   max-width: 10vw;
   position: absolute;
   z-index: 10;
-  right:5%;
-  bottom:20%;
+  right:40%;
+  bottom:40%;
 }
+#blood{
+  max-width: 7vw;
+  position: absolute;
+  z-index: 10;
+  left:5%;
+  bottom:25%;
+}
+
+#blood-2{
+  max-width: 10vw;
+  position: absolute;
+  z-index: 10;
+  left:10%;
+  bottom:10%;
+}
+
+#blood-3{
+  max-width: 5vw;
+  position: absolute;
+  z-index: 10;
+  left:15%;
+  bottom:25%;
+}
+#flag{
+  max-width: 20vw;
+  position: absolute;
+  z-index: 9;
+  right:10%;
+  bottom:25%;
+}
+
 
 
 /* 
@@ -551,6 +596,14 @@ span {
    bottom:10%;
 }
 
+#fireflies-2{
+  max-width: 50vw;
+  max-height: 50vh;
+  position: absolute;
+  z-index: 7;
+  left:10%;
+  filter:brightness(20);
+}
 
 
 
